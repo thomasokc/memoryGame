@@ -8,3 +8,26 @@
     border: 2px solid #fff;
     border-radius: 6px;
 }
+
+/* flips card by turning a flat surface on its side*/
+/* card absolute position keeps them on top of each other*/
+.card .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.card .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
